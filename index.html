@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <title>Vite + TS</title>
   </head>
   <body>
     <div id="app">
-      <h1>Módulo 9 - Laboratorio 9.1 Ticket de Compra</h1>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
+      <h1>Validador de Clave Segura</h1>
+
+  <label>
+    Nombre de usuario:<br />
+    <input type="text" id="usuario" />
+  </label><br />
+
+  <label>
+    Clave:<br />
+    <input type="password" id="clave" />
+  </label><br />
+
+  <button id="validar">Validar clave</button>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script type="module" src="./src/cajaFuerte.ts"></script>
   </body>
 </html>

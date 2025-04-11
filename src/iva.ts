@@ -44,7 +44,7 @@ interface TicketFinal {
   desgloseIva: TotalPorTipoIva[];
 }
 
-//  porcentajes de IVA -------------------
+//  porcentajes de IVA 
 
 const porcentajeIva: Record<TipoIva, number> = {
   general: 21,
@@ -55,7 +55,7 @@ const porcentajeIva: Record<TipoIva, number> = {
   sinIva: 0,
 };
 
-// Función  calcula el ticket -------------------
+// Función  calcula el ticket 
 
 const calculaTicket = (lineasTicket: LineaTicket[]): TicketFinal => {
 
